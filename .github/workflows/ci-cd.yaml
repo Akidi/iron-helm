@@ -23,7 +23,7 @@ jobs:
         run: npm install
       
       - name: Setup Playwright
-        run: npx playright install
+        run: npx playwright install
 
       - name: Build SvelteKit app
         run: npm run build
