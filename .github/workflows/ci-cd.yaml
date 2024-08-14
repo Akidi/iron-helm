@@ -17,10 +17,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # Or your desired Node.js version
+          node-version: '21'  # Or your desired Node.js version
 
       - name: Install dependencies
         run: npm install
+      
+      - name: Setup Playwright
+        run: npx playright install
 
       - name: Build SvelteKit app
         run: npm run build
